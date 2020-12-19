@@ -1,0 +1,2 @@
+export const error404 =`<div class="centrar animated fadeIn"><h1>Page not found.</h1>
+<p><img src="https://cdn.iconscout.com/icon/free/png-256/page-not-found-5-530376.png"><br>Upps the page you are looking for does not exist.</p></div>`;
