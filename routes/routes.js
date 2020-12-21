@@ -45,6 +45,7 @@ export const Router = () => {
     case "/about":
       usersLink();
       break;
+
     default:
       title = document.title = "Page not found";
       body.innerHTML = error404;

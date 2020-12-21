@@ -8,5 +8,5 @@ apdiv.innerHTML = `<div class="main">loading...</div>`;
 
 Router();
 document.body.addEventListener("click", e => {
-  console.log(e.target);
+  // console.log(e.target);
 });
