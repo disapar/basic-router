@@ -4,11 +4,11 @@ import { Users } from "../components/users";
 import { error404 } from "../components/404";
 
 export const Router = () => {
-  let body = document.querySelector(".main");
+  const body = document.querySelector(".main");
   // todos los botones
-  let btnHome = document.querySelector(".home");
-  let btnAbout = document.querySelector(".about");
-  let btnUser = document.querySelector(".user");
+  const btnHome = document.querySelector(".home");
+  const btnAbout = document.querySelector(".about");
+  const btnUser = document.querySelector(".user");
   // titulo de las paginas
   let title;
 
