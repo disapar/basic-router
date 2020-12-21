@@ -1,100 +1,101 @@
-
-*{
-  margin:0;
-  padding:0;
-  font-family: 'Arial', Helvetiva sans-serif;
-
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", Helvetiva sans-serif;
 }
-.titulo{
+.titulo {
   width: 100%;
   padding: 10px;
 }
-.main{
+.main {
+  box-sizing: border-box;
   width: 100%;
   min-height: 100vh;
   background-color: #ccc;
-  padding: 20px ;
-  box-sizing: border-box;
+  padding: 40px 20px 20px 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.carduser:nth-last-child(1) {
-    display: none;
-}
-ul{
-  display: flex;
 
-  width: 100%;
+.carduser:nth-last-child(1) {
+  display: none;
 }
-ul li{
+ul {
+  display: flex;
+  position: fixed;
+  height: 30px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: #fff;
+  z-index: 15;
+}
+ul li {
   list-style: none;
   margin: auto 10px;
   padding: 5px;
   cursor: pointer;
-
 }
-img{
+img {
   margin: 10px;
   width: 120px;
   height: 120px;
   object-fit: cover;
- 
 }
-.avatar{
-   border-radius: 50%;
+.avatar {
+  border-radius: 50%;
   border: 3px solid #276a96;
   box-sizing: border-box;
 }
-.centrar{
+.centrar {
   text-align: center;
   margin: auto;
 }
 /* Animated */
 .animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-  
-  .fast {
-    -webkit-animation-duration: 0.4s;
-    animation-duration: 0.4s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .fadeIn {
-    animation-name: fadeIn;
-  }
- /* user */
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 
- .carduser{
-    overflow: hidden;
-    width: 32%;
-    padding: 10px;
-    border: 1px solid #666;
-    margin: 0.6%;
-    box-sizing: border-box;
-   
- }
- .carduser p{
-   padding: 5px;
- }
- @media (max-width: 400px){
-   .carduser{
-     width: 48%;
-     margin: 0.7%;
-   }
- }
+.fast {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+/* user */
+
+.carduser {
+  overflow: hidden;
+  width: 32%;
+  padding: 10px;
+  border: 1px solid #666;
+  margin: 0.6%;
+  box-sizing: border-box;
+}
+.carduser p {
+  padding: 5px;
+}
+@media (max-width: 400px) {
+  .carduser {
+    width: 48%;
+    margin: 0.7%;
+  }
+}

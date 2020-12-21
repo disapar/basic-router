@@ -50,6 +50,4 @@ export const Router = () => {
       body.innerHTML = error404;
       break;
   }
-
-  
 };
