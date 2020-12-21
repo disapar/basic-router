@@ -51,15 +51,5 @@ export const Router = () => {
       break;
   }
 
-  // if (window.location.pathname == "/") {
-  //   HomeLink();
-  // } else if (window.location.pathname == "/about") {
-  //   aboutLink();
-  // } else if (window.location.pathname == "/users") {
-  //   usersLink();
-  // } else {
-  //   // em el caso de que la url es erronea llamamos esta funcion
-  //   title = document.title = "Page not found";
-  //   body.innerHTML = error404;
-  // }
+  
 };
