@@ -35,15 +35,31 @@ export const Router = () => {
   btnUser.addEventListener("click", usersLink);
 
   // llamamos a la ruta al actualizar el navegador
-  if (window.location.pathname == "/") {
-    HomeLink();
-  } else if (window.location.pathname == "/about") {
-    aboutLink();
-  } else if (window.location.pathname == "/users") {
-    usersLink();
-  } else {
-    // em el caso de que la url es erronea llamamos esta funcion
-    title = document.title = "Page not found";
-    body.innerHTML = error404;
+  switch (window.location.pathname) {
+    case "/":
+      HomeLink();
+      break;
+    case "/about":
+      aboutLink();
+      break;
+    case "/about":
+      usersLink();
+      break;
+    default:
+      title = document.title = "Page not found";
+      body.innerHTML = error404;
+      break;
   }
+
+  // if (window.location.pathname == "/") {
+  //   HomeLink();
+  // } else if (window.location.pathname == "/about") {
+  //   aboutLink();
+  // } else if (window.location.pathname == "/users") {
+  //   usersLink();
+  // } else {
+  //   // em el caso de que la url es erronea llamamos esta funcion
+  //   title = document.title = "Page not found";
+  //   body.innerHTML = error404;
+  // }
 };
