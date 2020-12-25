@@ -42,7 +42,7 @@ export const Router = () => {
     case "/about":
       aboutLink();
       break;
-    case "/about":
+    case "/users":
       usersLink();
       break;
 
