@@ -12,7 +12,7 @@ export const Router = () => {
   // titulo de las paginas
   let title;
 
-  const HomeLink = () => {
+  const homeLink = () => {
     title = document.title = "Home";
     body.innerHTML = Home;
     window.history.pushState("", title, "/");
@@ -30,7 +30,7 @@ export const Router = () => {
   };
 
   // escuchando los links
-  btnHome.addEventListener("click", HomeLink);
+  btnHome.addEventListener("click", homeLink);
   btnAbout.addEventListener("click", aboutLink);
   btnUser.addEventListener("click", usersLink);
 
