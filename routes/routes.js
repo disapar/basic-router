@@ -37,7 +37,7 @@ export const Router = () => {
   // llamamos a la ruta al actualizar el navegador
   switch (window.location.pathname) {
     case "/":
-      HomeLink();
+      homeLink();
       break;
     case "/about":
       aboutLink();
