@@ -4,7 +4,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 .then( res => res.json())
 .then( data =>{
 body.innerHTML ="";
-body.innerHTML += '<h1 class="titulo">All users from jsonplaceholder</h1><br>';
+body.innerHTML += '<h1 class="titulo">All users from jsonplaceholder</h1>';
 data.forEach( data =>{
   // console.log(data)
   
